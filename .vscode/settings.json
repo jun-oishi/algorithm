@@ -1,0 +1,33 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "set": "cpp",
+        "vector": "cpp",
+        "__availability": "cpp",
+        "__bit_reference": "cpp",
+        "__config": "cpp",
+        "__hash_table": "cpp",
+        "__string": "cpp",
+        "__tree": "cpp",
+        "algorithm": "cpp",
+        "bitset": "cpp",
+        "functional": "cpp",
+        "locale": "cpp",
+        "map": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "*.tcc": "cpp",
+        "ratio": "cpp",
+        "streambuf": "cpp",
+        "__split_buffer": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp"
+    },
+    "cSpell.words": [
+        "inorder"
+    ]
+}

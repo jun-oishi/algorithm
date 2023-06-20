@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            // "type": "cppdbg",
+            "type": "lldb",
+            "request": "launch",
+            "program": "./a.out",
+            "externalConsole": false,
+            "console": "integratedTerminal",
+            "miDebuggerPath": "gdb",
+            "MIMode": "gdb",
+            // "windows": {
+            //     "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            //     "miDebuggerPath": "c:/MinGW/bin/gdb.exe",
+            //     "MIMode": "gdb",
+            // },
+            "osx": {
+                "MIMode": "lldb",
+                // "MIMode": "gdb",
+            },
+            "args": ["<", "./stdinput"],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/${relativeFileDirname}",
+            "environment": [],
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+    ]
+}
