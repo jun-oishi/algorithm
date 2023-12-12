@@ -22,7 +22,7 @@
         {
             "label": "G++ test build",
             "type": "shell",
-            "command": "g++-13",
+            "command": "g++",
             "options": {
                 "cwd": "${workspaceFolder}/${relativeFileDirname}"
             },
