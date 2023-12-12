@@ -17,19 +17,22 @@ int main() {
     }
   }
 
+  int min_a = a[0];
+  for (int i = 1; i < n; i++) min_a = min(min_a, a[i]);
   for (int i = 0; i < n; i++) {
-    if (b[i] < 0) {
-      for (int j = 0; j < n; j++) {
-        a[j] += -b[i] + 1;
-      }
-    }
+    a[i] -= min_a;
+    b[i] += min_a;
   }
+
+  int min_b = b[0];
+  for (int i = 0; i < n; i++) min_b = min(min_b, b[i]);
+  if (min_b < 0) ans = 0;
 
   if (ans) {
     cout << "Yes" << endl;
-    for (int j = 0; j < n; j++) {
-      if (j) cout << " ";
-      cout << c[j][0];
+    for (int i = 0; i < n; i++) {
+      if (i) cout << " ";
+      cout << a[i];
     }
     cout << endl;
     for (int i = 0; i < n; i++) {
